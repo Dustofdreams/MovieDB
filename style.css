@@ -4,19 +4,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 html {
     font-size: 62.5%;
-}
-
-body {
-    height: 100%;
     background: linear-gradient(172deg, rgba(12,1,19,0.9 ) 0%, rgba(8, 21, 3, 0.9) 100%);
     background-size: cover;
     background-position: 75% 75%;
-    background-blend-mode: multiply;
+    height: 100%;
 }
 
 .row {
@@ -31,7 +27,7 @@ body {
 }
 
 a {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
     color: #fff;
     font-size: 1.4rem;
@@ -93,9 +89,6 @@ nav {
 
 /* HEADER */
 
-header {
-    height: 80%;
-}
 
 .row__header {
     display: flex;
