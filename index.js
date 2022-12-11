@@ -36,7 +36,9 @@ function movieHTML(movie) {
                 <p>${movie.overview}</p>
             </div>        
         </div>
+        <button class="details__btn" onclick="goBack()">More details</button>
     </div>`
+
 }
 
 

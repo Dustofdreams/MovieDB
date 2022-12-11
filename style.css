@@ -10,9 +10,21 @@
 html {
     font-size: 62.5%;
     background: linear-gradient(172deg, rgba(12, 1, 19, 0.9) 0%, rgba(8, 21, 3, 0.9) 100%);
-    background-size: cover;
+    background-size: stretch;
     background-position: 75% 75%;
-    min-height: 100%;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
 }
 
 
@@ -87,14 +99,6 @@ nav {
     font-weight: 700;
 }
 
-footer {;
-    max-width: 100%;
-    height: 10rem;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(12, 1, 19, 0.4);
-}
 
 
 
@@ -102,12 +106,8 @@ footer {;
 
 
 .row__header {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start; */
     align-items: center;
     border-radius: 2.4rem;
-    min-height: 80vh;
     margin: 0 auto;
 }
 
@@ -146,6 +146,7 @@ input {
     font-weight: 700;
     text-transform: uppercase;
 }
+
 
 input::placeholder {
     color: rgb(148, 148, 148);
@@ -203,15 +204,39 @@ input:focus {
     height: auto;
     background-color: rgba(12, 1, 19, 0.4);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    border-radius: 1rem;
+    border-radius: 2.4rem;
     cursor: pointer;
     overflow: hidden;
+    position: relative;
 }
 
 .movie__poster img {
     width: 245px;
     height: auto;
     overflow: hidden;
+}
+
+.details__btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 2.4rem 0 2.4rem 0;
+    background-color: #E49F84;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.1;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.details__btn:hover {
+    border-radius: 2.4rem 0 0 0;
+    background-color: rgba(12, 1, 19, 0.4);
+    color: #E49F84;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .scores-and-name {
@@ -221,6 +246,7 @@ input:focus {
     align-items: center;
     width: 100%;
     padding: 0 1rem;
+    padding-bottom: 5rem;
 }
 
 .scores {
@@ -251,7 +277,31 @@ input:focus {
 
 /* FOOTER */
 
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: rgba(12, 1, 19, 1);
+    margin-top: auto;
+    display: flex;
+
+}
+
+footer .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10rem;
+}
 
 footer p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+footer img {
+    width: 2.4rem;
+    filter: invert(79%) sepia(44%) saturate(680%) hue-rotate(311deg) brightness(95%) contrast(88%);
 }
