@@ -40,17 +40,8 @@ function movieHTML(movie) {
 }
 
 
-// movieListElement.addEventListener("click", e => {
-//     if ( e.target.matches('.scores-and-name') ) {
-//         console.log(e)
-//         // localStorage.setItem("title", JSON.stringify(e.target.innerText))
-//       }
-// }
-// )
 searchBtn.addEventListener("click", showMovies);    
 
-
-// console.log(JSON.stringify(e.target.innerText))
 
 
 

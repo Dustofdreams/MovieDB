@@ -9,11 +9,12 @@
 
 html {
     font-size: 62.5%;
-    background: linear-gradient(172deg, rgba(12,1,19,0.9 ) 0%, rgba(8, 21, 3, 0.9) 100%);
+    background: linear-gradient(172deg, rgba(12, 1, 19, 0.9) 0%, rgba(8, 21, 3, 0.9) 100%);
     background-size: cover;
     background-position: 75% 75%;
-    height: 100%;
+    min-height: 100%;
 }
+
 
 .row {
     width: min(100%, 1320px);
@@ -36,15 +37,17 @@ a {
     transition: all 0.2s ease;
 }
 
-a:not(:last-child){
+a:not(:last-child) {
     margin-right: 4rem;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: #fff;
 }
 
-a:link:active, a:visited:active {
+a:link:active,
+a:visited:active {
     color: #fff;
 }
 
@@ -61,7 +64,7 @@ header {
 
 nav {
     margin: 2rem 1rem 0 1rem;
-    
+
 }
 
 .logo {
@@ -73,7 +76,7 @@ nav {
 
 
 .FA__icon {
-   width: 100px;
+    width: 100px;
     height: 100px;
     color: white;
 }
@@ -84,6 +87,14 @@ nav {
     font-weight: 700;
 }
 
+footer {;
+    max-width: 100%;
+    height: 10rem;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(12, 1, 19, 0.4);
+}
 
 
 
@@ -91,19 +102,20 @@ nav {
 
 
 .row__header {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; */
     align-items: center;
-    margin: 10rem auto;
     border-radius: 2.4rem;
     min-height: 80vh;
+    margin: 0 auto;
 }
 
 header h1 {
     color: #fff;
     font-size: 4.2rem;
     text-transform: uppercase;
+    margin-top: max(2rem, 10rem);
 }
 
 header p {
@@ -126,12 +138,55 @@ header p {
 }
 
 input {
-    width: 800px;
+    width: 80%;
+    height: 70px;
     padding: 1.5rem 4rem;
-    border-radius: 2.4rem;
-    border: none;
+    border-radius: 4.8rem;
+    border: 3px solid #E49F84;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
+input::placeholder {
+    color: rgb(148, 148, 148);
+}
+
+input:focus {
+    outline: none;
+}
+
+.search__field {
+    background-color: rgba(12, 1, 19, 0.4);
+    height: 20rem;
+    width: max(100%, 100rem);
+    border-radius: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.search__button {
+    position: absolute;
+    right: 11%;
+    height: 5rem;
+    padding: 1.5rem 4rem;
+    border: none;
+    border-radius: 2.4rem;
+    font-family: 'Inter', sans-serif;
+    color: #E49F84;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: rgba(12, 1, 19, 0.9);
+    transition: all 0.2s ease;
+}
+
+.search__button:hover {
+    background-color: #E49F84;
+    color: rgba(12, 1, 19, 1);
+}
 
 .search__result {
     display: flex;
@@ -144,7 +199,7 @@ input {
 .movie__result {
     display: flex;
     justify-content: flex-start;
-    width: min(100%, 60rem);
+    width: min(100%, 64rem);
     height: auto;
     background-color: rgba(12, 1, 19, 0.4);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -154,9 +209,9 @@ input {
 }
 
 .movie__poster img {
-width: 245px;
-height: auto;
-overflow: hidden;
+    width: 245px;
+    height: auto;
+    overflow: hidden;
 }
 
 .scores-and-name {
@@ -177,7 +232,7 @@ overflow: hidden;
 
 }
 
-.scores  p {
+.scores p {
     font-size: 1.4rem;
     color: white
 }
@@ -194,24 +249,9 @@ overflow: hidden;
 }
 
 
+/* FOOTER */
 
 
-
-.IMDB,
-.Rotten,
-.Metacritic {
-    border: 2px solid;
-    color: #fff;
-    border-radius: 50%;
-    padding: 1rem;
-}
-
-.red {
-    color: red
-}
-.yellow {
-    color: yellow
-}
-.green {
-    color: green
+footer p {
+    font-size: 1.6rem;
 }
