@@ -49,7 +49,7 @@ async function getMovie() {
 
 function goBack() {
         localStorage.clear()
-        window.location.href = `${window.location.origin}/movieDB/`
+        window.location.href = `${window.location.origin}/movieDB/index.html`
 }
 
 getMovie()
