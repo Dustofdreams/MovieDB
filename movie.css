@@ -11,6 +11,7 @@ body {
     background-blend-mode: multiply;
     color: white;
     font-family: 'Inter', sans-serif;
+    height: 100%;
 }
 
 button {
@@ -105,12 +106,12 @@ h3 {
 .director,
 .score
  {
-    width: minmax(20%, 30%);
+    width: minmax(20%, 40%);
     justify-self: flex-end;
 }
 
 .producer {
-    width: minmax(20%, 60%);
+    width: minmax(20%, 50%);
 }
 
 .director,
@@ -166,6 +167,10 @@ h3 {
 }
 
 @media (max-width: 700px) {
+    .movie__show {
+        margin-top: 2rem
+    }
+    
     .movie__info {
         width: 100%;
         padding-left: 2rem;
