@@ -3,10 +3,10 @@ const apiKey = "d27398a942ce7c69ee900256481b5e70"
 
 const movieNameRef = document.querySelector('.search__value')
 const searchBtn = document.querySelector(".search__button");
+const searchBtnIcon = document.querySelector(".search__button--icon");
 const movieListElement = document.querySelector('.search__result')
 const movieListIMDB = document.querySelector('.imdb__info')
 
-searchBtn.addEventListener("click", showMovies);
 
 async function showMovies() {
     let movieName = movieNameRef.value
@@ -19,7 +19,7 @@ async function showMovies() {
 
 function showSingleMovie(id) {
     localStorage.setItem("id", id)
-    window.location.href = `${window.location.origin}/movie.html`
+    window.location.href = `${window.location.origin}/MovieDB/movie.html`
     console.log(window.location.href)
 }
 
@@ -44,6 +44,7 @@ function movieHTML(movie) {
 
 
 searchBtn.addEventListener("click", showMovies);    
+searchBtnIcon.addEventListener("click", showMovies);    
 
 
 
