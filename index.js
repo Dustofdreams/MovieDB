@@ -20,6 +20,7 @@ async function showMovies() {
 function showSingleMovie(id) {
     localStorage.setItem("id", id)
     window.location.href = `${window.location.origin}/movie.html`
+    console.log(window.location.href)
 }
 
 
